@@ -1,4 +1,4 @@
-# Ventas_export_legacy
+# ventas-legacy-power-query
 
 Documentación del proceso de limpieza y transformación del archivo `Ventas_export_legacy.xlsx` en Power Query, para el ejercicio de Conectividad y Transformación de Datos en Power BI.
 
@@ -59,6 +59,7 @@ Se cambiaron los 20 nombres técnicos por nombres descriptivos en español y sin
   if [TOT_VTA] = null then [cantidad] * [precio_unitario] * (1 - [descuento]) else [TOT_VTA]
   ```
   Se renombra a total_venta 
+
 
 ### 4. Separación en dos tablas
 
